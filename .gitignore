@@ -1,0 +1,34 @@
+# === Xcode ===
+.DS_Storee
+
+# === Swift Package Manager ===
+.swiftpm/
+.build/
+.build/
+Packages/
+Package.resolved
+
+# === CocoaPods ===
+Pods/
+Podfile.lock
+
+# === Carthage ===
+Carthage/Build/
+
+# === SwiftLint / SwiftFormat Cache ===
+.swiftlint.cache
+.swiftformat.cache
+
+# === Documentation ===
+*.doccarchive
+
+# === Logs & Output ===
+*.log
+*.tmp
+
+# === IDE / OS Junk ===
+*.swp
+*~
+Thumbs.db
+ehthumbs.db
+Desktop.ini

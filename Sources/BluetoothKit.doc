@@ -1,0 +1,11 @@
+xcodebuild docbuild \
+  -scheme Examples \            # or ライブラリ用スキーム
+  -destination 'generic/platform=iOS' \
+  -derivedDataPath .build
+
+ARCHIVE=$(find .build -type d -name '*.doccarchive' | head -n 1)
+
+xcrun docc process-archive transform-for-static-hosting \
+  "$ARCHIVE" \
+  --output-path docs \
+  --hosting-base-path <user>/<repo>

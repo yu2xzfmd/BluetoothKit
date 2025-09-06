@@ -1,0 +1,5 @@
+target 'Examples' do
+  platform :ios, '15.6'
+  use_frameworks!
+  pod 'BluetoothKit', :path => '../'
+end
